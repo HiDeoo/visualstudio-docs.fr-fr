@@ -25,13 +25,13 @@ Pour les projets ASP.NET Core, une utilisation courante du package NuGet consist
 
 ## <a name="add-typescript-support-with-nuget"></a>Ajouter la prise en charge de la fonction de machine avec NuGet
 
-[Le package NuGet dactylographié ajoute la](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild) prise en charge de la méthode de réécrire. lorsque le package NuGet pour TypeScript 3.2 (ou version ultérieure) est installé dans un projet, la version correspondante du service de langage TypeScript est chargée dans l’éditeur.
+[Le package NuGet TypeScript ajoute la](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild) prise en charge de la méthode de réécrire. lorsque le package NuGet pour TypeScript 3.2 (ou version ultérieure) est installé dans un projet, la version correspondante du service de langage TypeScript est chargée dans l’éditeur.
 
 Si Visual Studio est installé, la node.exe regroupée avec elle est automatiquement récupérée par Visual Studio. Si vous n’avez pas Node.js installé, nous vous recommandons d’installer la version LTS à partir du site Web [Node.js](https://nodejs.org/en/download/) .
 
 1. Ouvrez votre projet ASP.NET Core dans Visual Studio.
 
-1. Dans Explorateur de solutions (volet droit). Cliquez avec le bouton droit sur le nœud du projet et choisissez **gérer les packages NuGet**. Sous l’onglet **Parcourir** , recherchez **Microsoft. dactylographié. MSBuild**, puis cliquez sur **installer** à droite pour installer le package.
+1. Dans Explorateur de solutions (volet droit). Cliquez avec le bouton droit sur le nœud du projet et choisissez **gérer les packages NuGet**. Sous l’onglet **Parcourir** , recherchez **Microsoft.TypeScript.MSBuild**, puis cliquez sur **installer** à droite pour installer le package.
 
    ![Ajouter un package NuGet](../javascript/media/aspnet-core-ts-nuget.png)
 
@@ -117,17 +117,17 @@ Si vous rencontrez des problèmes où Visual Studio utilise une version de Node.
     Deux fichiers se trouvent dans ce dossier.
     Les deux sont des points d’entrée (pour le fichier cible de la base de texte et les fichiers props), respectivement.
 
-    1. *Microsoft. dactylographié. MSBuild. targets*
+    1. *Microsoft.TypeScript.MSBuild.targets*
 
-        Ce fichier définit les variables qui spécifient la plateforme Runtime, comme un chemin d’accès *TypeScript.Tasks.dll*, avant d’importer *Microsoft. dactylographié. targets* à partir du dossier *Tools* .
+        Ce fichier définit les variables qui spécifient la plateforme Runtime, comme un chemin d’accès *TypeScript.Tasks.dll*, avant d’importer *Microsoft.TypeScript.targets* à partir du dossier *Tools* .
 
-    2. *Microsoft. dactylographié. MSBuild. props*
+    2. *Microsoft.TypeScript.MSBuild.props*
 
-        Ce fichier importe *Microsoft. dactylographié. default. props* à partir du dossier *Tools* et définit les propriétés indiquant que la génération a été lancée par le biais de NuGet.
+        Ce fichier importe *Microsoft.TypeScript.default.props* à partir du dossier *Tools* et définit les propriétés indiquant que la génération a été lancée par le biais de NuGet.
 
 - dossier *Outils*
 
-    Les versions de package antérieures à 2,3 contiennent uniquement un dossier TSC. *Microsoft. dactylographié. targets* et *TypeScript.Tasks.dll* se trouvent au niveau de la racine.
+    Les versions de package antérieures à 2,3 contiennent uniquement un dossier TSC. *Microsoft.TypeScript.targets* et *TypeScript.Tasks.dll* se trouvent au niveau de la racine.
 
     Dans les versions de package 2,3 et ultérieures, le niveau racine contient `Microsoft.TypeScript.targets` et `Microsoft.TypeScript.Default.props` . Pour plus d’informations sur ces fichiers, consultez [configuration de MSBuild](https://www.typescriptlang.org/docs/handbook/compiler-options-in-msbuild.html).
 
