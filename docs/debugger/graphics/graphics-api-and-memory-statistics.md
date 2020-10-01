@@ -36,7 +36,7 @@ Cet outil affiche la quantité de mémoire allouée par le pilote graphique pour
 
 ![Statistiques de la mémoire](media/gfx_diag_memory_statistics.png)
 
-La colonne **allocation GPU** affiche la quantité de mémoire utilisée par l’événement affiché dans la colonne d' **événement** .  Vous pouvez également sélectionner l’icône espion icône ![ Espion ](media/gfx_watch.png) pour afficher l' [historique des ressources](graphics-event-list.md#resource-history) de l’événement sélectionné.
+La colonne **allocation GPU** affiche la quantité de mémoire utilisée par l’événement affiché dans la colonne d' **événement** .  Vous pouvez également sélectionner l’icône espion ![ Espion ](media/gfx_watch.png) pour afficher l' [historique des ressources](graphics-event-list.md#resource-history) de l’événement sélectionné.
 
 Comme avec l’outil statistiques des API, vous pouvez cliquer avec le bouton droit dans la fenêtre pour copier toutes les données au format CSV, qui peuvent être collées dans des éléments tels qu’Excel pour une analyse plus poussée.
 
